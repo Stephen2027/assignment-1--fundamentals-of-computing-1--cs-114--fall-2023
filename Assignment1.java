@@ -21,7 +21,7 @@ public class Assignment1 {
     Scanner input = new Scanner(System.in); {
     System.out.println("\nPlease enter a number in degrees Fahernheit: ");
     int Fahernheit = input.nextInt();
-    int Celcius = (Fahernheit - 32) * 5/9; // convert fahernheit to celcius
+    int Celsius = (Fahernheit - 32) * 5/9; // convert fahernheit to celcius
 
 
     // takes five character string, reverses it and removes the first and last characters
