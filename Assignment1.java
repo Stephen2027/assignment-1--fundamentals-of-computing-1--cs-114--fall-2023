@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.random.RandomGenerator;
 import java.util.Random;
 /*Goal: Print out initials using letters, S and H. User input, asking for
  degrees Fahrenheit and convert to Celsius, User input, asking for a 5 character string,
@@ -12,10 +11,8 @@ public class Assignment1 {
     int fahrenheit;    
     int celsius;
     Random generator = new Random();
-    int num1;
-    int min = 32;
-    int max = 16384;
-    int newstring;
+    String newstring;
+    
     
 
     // print out initials
@@ -29,9 +26,10 @@ public class Assignment1 {
 
     // take five character string, reverses it and removes the first and last characters
     System.out.println("Please enter a five character string: ");
-    String inputString = input.next();
-    String reverseString = new StringBuilder(inputString.substring(1, 4)).reverse().toString();
+    String abewz = input.next();
+    newstring = new StringBuilder(abewz.substring(1, 4)).reverse().toString();
 
+    
     // Fahrenheit to Celcius
     {
     System.out.println("Please enter a number in degrees Fahernheit: ");
@@ -44,9 +42,11 @@ public class Assignment1 {
     int Randomint = generator.nextInt(16384) + 32;
     System.out.println( + Randomint);
 
-    //final line of text
-    System.out.println("Your new string is");
-    System.out.println(celsius);
+    //combining different steps
+    System.out.println(celsius + newstring + Randomint);
+
+
+    input.close();
     }
   }
 }
