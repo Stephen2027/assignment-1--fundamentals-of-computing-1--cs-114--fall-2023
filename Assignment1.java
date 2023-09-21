@@ -13,6 +13,10 @@ public class Assignment1 {
     int celsius;
     Random generator = new Random();
     int num1;
+    int min = 32;
+    int max = 16384;
+    int newstring;
+    
 
     // print out initials
     System.out.println("SSSSSSSSSS        HH       HH");
@@ -32,16 +36,17 @@ public class Assignment1 {
     {
     System.out.println("Please enter a number in degrees Fahernheit: ");
     fahrenheit = input.nextInt();
-    celsius = (fahrenheit - 32); // celcius to fahrenheit
+    celsius = (fahrenheit - 32); // fahrenheit to celsius
 
-    //asks for a random number between 32 and 16384 inclusive
+    //random number between 32 and 16384 inclusive
     System.out.println("Random number generated. Continuing...: ");
     input.close();
-    num1 = generator.nextInt();
-    System.out.println( + num1);
+    int Randomint = generator.nextInt(16384) + 32;
+    System.out.println( + Randomint);
 
     //final line of text
-    System.out.println("Your new string is" + num1);
+    System.out.println("Your new string is");
+    System.out.println(celsius);
     }
   }
 }
